@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 @SpringBootApplication
 @EnableConfigurationProperties
@@ -12,6 +14,7 @@ public class KnowledgeSpringApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(KnowledgeSpringApplication.class, args);
+		AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(KnowledgeSpringApplication.class);
 	}
 
 }
