@@ -18,10 +18,10 @@ import org.springframework.stereotype.Component;
  *   CUSTOM 自定义的
  */
 
-@ComponentScan(value = "com.liqinchun.knowledge.knowledge.spring.annotation",useDefaultFilters = false,excludeFilters = {
-        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE,value = {AnnotationService.class}),
-        @ComponentScan.Filter(type = FilterType.CUSTOM,value = MyScanFilter.class)
-},includeFilters = {})
+//@ComponentScan(value = "com.liqinchun.knowledge.knowledge.spring.annotation",useDefaultFilters = false,excludeFilters = {
+//        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE,value = {AnnotationService.class}),
+//        @ComponentScan.Filter(type = FilterType.CUSTOM,value = MyScanFilter.class)
+//},includeFilters = {})
 public class ComponentScanAnnotation {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(ComponentScanAnnotation.class);

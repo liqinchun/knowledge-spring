@@ -7,10 +7,7 @@ import org.springframework.stereotype.Service;
 
 
 @Slf4j
-@ComponentScan(value = "com.liqinchun.knowledge.knowledge.spring.annotation",useDefaultFilters = false,excludeFilters = {
-        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE,value = {AnnotationService.class})
-},includeFilters = {})
-@Import(ConfigurationService.class)
+@ComponentScan(value = "com.liqinchun.knowledge.knowledge.spring.annotation")
 public class ConfigAnnotation {
 
     /**
@@ -19,9 +16,9 @@ public class ConfigAnnotation {
      * @Lazy 针对单实例情况下，容器启动时不创建对象
      * @return
      */
-    @Bean
+//    @Bean
 //    @Scope(value = "prototype")
-    @Lazy
+//    @Lazy
     public ConfigurationService configurationService(){
         log.info("创建实例configurationService");
         return new ConfigurationService();
