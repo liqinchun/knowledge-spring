@@ -1,6 +1,7 @@
 package com.liqinchun.knowledge.knowledge.spring.annotation.configuration;
 
 import com.liqinchun.knowledge.knowledge.spring.annotation.AnnotationService;
+import com.liqinchun.knowledge.knowledge.spring.annotation.autoware.AutoWireRegistrar;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.*;
 import org.springframework.stereotype.Service;
@@ -8,6 +9,8 @@ import org.springframework.stereotype.Service;
 
 @Slf4j
 @ComponentScan(value = "com.liqinchun.knowledge.knowledge.spring.annotation")
+@Import(AutoWireRegistrar.class)
+
 public class ConfigAnnotation {
 
     /**
