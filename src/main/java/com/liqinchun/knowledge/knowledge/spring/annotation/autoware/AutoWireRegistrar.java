@@ -15,7 +15,7 @@ public class AutoWireRegistrar implements ImportBeanDefinitionRegistrar {
         GenericBeanDefinition gAutoWareAnnotationbd= (GenericBeanDefinition) registry.getBeanDefinition("autoWareAnnotation");
         //设置为byType
 //        gbd.setAutowireMode(AbstractBeanDefinition.AUTOWIRE_BY_NAME);
-        gAutoWareAnnotationbd.setAutowireMode(AbstractBeanDefinition.AUTOWIRE_BY_TYPE);
+//        gAutoWareAnnotationbd.setAutowireMode(AbstractBeanDefinition.AUTOWIRE_BY_TYPE);
         //重新注册到Spring容器中
         registry.removeBeanDefinition("autoWareBa");
         registry.removeBeanDefinition("autoWareAnnotation");
