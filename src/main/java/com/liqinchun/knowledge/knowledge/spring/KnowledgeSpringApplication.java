@@ -21,6 +21,7 @@ public class KnowledgeSpringApplication {
 		System.out.println(context.getBean("org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory"));
 		System.out.println(context.getBean("&org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory"));
 		System.out.println(context.getBean("autowireByNameAa"));
+		System.out.println(context.getBean("classA"));
 		Object bean = context.getBean("autoWareAnnotation");
 		System.out.println(bean);
 	}
