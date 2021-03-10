@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 
 import java.util.function.Predicate;
 
-@Configuration
 public class CustomImportSelector implements ImportSelector {
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
         System.out.println("CustomImportSelector  selectImports");
+        //注入为类的全路径名
         return new String[]{"com.liqinchun.knowledge.knowledge.spring.annotation.importannotation.ImportSelectorA"};
     }
 

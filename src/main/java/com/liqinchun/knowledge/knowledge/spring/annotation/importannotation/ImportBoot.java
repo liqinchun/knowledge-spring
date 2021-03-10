@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
-@ComponentScan("com.liqinchun.knowledge.knowledge.spring.annotation.importannotation")
-@Import(ImportClassA.class)
+//@ComponentScan("com.liqinchun.knowledge.knowledge.spring.annotation.importannotation")
+
 public class ImportBoot {
 
     public static void main(String[] args) {
