@@ -8,4 +8,8 @@ public class AutoConfigService {
     public AutoConfigService(AutoProperties autoProperties){
         System.out.println(autoProperties.getName());
     }
+
+    public void print(){
+
+    }
 }
