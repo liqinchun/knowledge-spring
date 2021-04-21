@@ -3,7 +3,7 @@ package com.liqinchun.knowledge.knowledge.spring.extensionpoints;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.stereotype.Service;
 
-@Service("classA")
+//@Service("classAA")
 public class FactoryBeanPoint implements FactoryBean {
 
     @Override
